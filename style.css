@@ -1,0 +1,506 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+    background-color: var(--bg);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hero Section */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(241, 78, 149, 0.6)), url('bg/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 12rem;
+    color: var(--pink);
+    text-shadow: var(--shadow);
+    font-weight: bold;
+}
+.hero h2 {
+    font-family: 'Montserrat', cursive;
+    font-size: 1rem;
+    color: white;
+    text-shadow: var(--shadow);
+    font-weight: bold;
+}
+
+.hero h4 {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.8;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    opacity: 0.8;
+}
+
+.hero a {
+    color: white;
+    background: var(--pink);
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background: white;
+    color: var(--pink);
+    transform: scale(1.05);
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(241, 78, 149, 0.8)), url('bg/HOME.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 3rem 10px;
+    text-align: center;
+}
+.home h2 {
+   
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: var(--shadow);
+    font-family: 'alice';
+}
+.home h3 {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.home p {
+    font-size: 1rem;
+    color: black);
+}
+
+
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+
+/* Tidak perlu media query, karena default sudah dalam satu kolom */
+
+.acara {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(241, 78, 149, 0.8)), url('bg/HOME.png'); /* Tambahkan gambar latar */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+.acara p {
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+}
+
+.acara h1 {
+    font-family: 'alice';
+    font-size: 2rem;
+    color: white;
+}
+
+.acara h2 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    color: #f14e95;
+    font-weight: 300;
+    font-weight: bold;
+}
+.event-box {
+    background: linear-gradient(135deg, rgba(241, 78, 149, 0.9), rgba(0, 0, 0, 0.9));
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 450px;
+    margin: 20px auto; /* Menambahkan jarak antar box */
+}
+
+.event-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+    
+}
+
+.event-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.event-box p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #f8f8f8;
+}
+
+.event-box p strong {
+    color: #ffeb3b;
+}
+
+/* Layout Flex untuk Event Section */
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Memberikan jarak antar event-box */
+    padding: 50px 20px;
+}
+
+
+.Tamu {
+    background: linear-gradient(135deg, rgba(241, 78, 149, 0.9), rgba(0, 0, 0, 0.9));
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+.home-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2px;
+}
+.quran-box {
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    border: 2px solid #c9a76f;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+.quran-text {
+    font-family: 'Amiri', serif;
+    font-size: 28px;
+    color: #704214;
+    direction: rtl;
+    margin-bottom: 2px;
+}
+.translation {
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+}
+.love-icon {
+    width: 80px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .love-icon {
+        margin: 15px 0;
+    }
+/* Responsif */
+@media (max-width: 768px) {
+    .event-box {
+        padding: 20px;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .event-box h3 {
+        font-size: 1.8rem;
+    }
+    .event-box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-box {
+        width: 90%;
+    }
+}
+
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.music-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .couple {
+        flex-direction: column;
+    }
+    .couple .col-lg-6 {
+        max-width: 100%;
+    }
+}
+/* Styling untuk countdown box */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.countdown-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: var(--shadow);
+}
+
+.countdown-box div {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.countdown-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero h4 {
+        font-size: 1.4rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero h4 {
+        font-size: 1.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi Slide Up */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi Scale Up */
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Optimasi animasi untuk performa lebih ringan */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+        will-change: opacity, transform;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        will-change: opacity, transform;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+        will-change: opacity, transform;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animasi Couple */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.couple-box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.couple-box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.couple-box:nth-child(1) {
+    transition-delay: 0.5s;
+}
+
+.couple-box:nth-child(3) {
+    transition-delay: 1s;
+}
+
+/* Terapkan animasi ke elemen tertentu tanpa looping */
+.hero h1, 
+.hero h4, 
+.hero p {
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.event-box h3 {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.countdown-box div {
+    animation: scaleUp 0.8s ease-in-out forwards;
+}
+
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    max-width: 90vw; /* Maksimum 90% dari lebar viewport */
+    max-height: 80vh; /* Maksimum 80% dari tinggi viewport */
+    border: 1px solid #ddd;
+}
+

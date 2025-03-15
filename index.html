@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rico & Riska Wedding</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- Tombol Musik -->
+<button id="musicButton" class="music-btn">
+    🔊
+</button>
+
+<!-- Elemen Audio -->
+<audio id="backgroundMusic" loop>
+    <source src="musik/cristina perry a thousand years.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+</audio>
+
+
+<section id="HERO" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <main>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
+        <h1>Rico & Riska</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <div class="days">00</div>
+                <p>Hari</p>
+            </div>
+            <div class="countdown-box">
+                <div class="hours">00</div>
+                <p>Jam</p>
+            </div>
+            <div class="countdown-box">
+                <div class="minutes">00</div>
+                <p>Menit</p>
+            </div>
+            <div class="countdown-box">
+                <div class="seconds">00</div>
+                <p>Detik</p>
+            </div>
+        </div> 
+
+        <a href="#undangan" class="btn btn-lg mt-4" onClick="enableScroll()" >Lihat Undangan</a>
+    </main>
+</section>
+<section id="home" class="home">
+    <div class="container">
+        <h2>Acara Pernikahan</h2>
+        <div class="quran-box">
+            <h1 class="quran-text">
+                وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً
+            </h1>
+            <p class="translation">
+                "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri,
+                agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."
+            </p>
+        </div>
+        <p class="mt-3">Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami.</p>
+    </div>
+    <div class="container couple mt-5">
+        <div class="row">
+            <div class="col-lg-5 couple-box">
+                <h3>Rico Satya Nugraha</h3>
+                <p>Putra dari Bpk. Rodib <br> dan <br> Ibu Dian Akbariyah Yuniati</p>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <img src="bg/love.png" class="img-fluid love-icon">
+            </div>
+            <div class="col-lg-5 couple-box">
+                <h3>Riska Ayu Eka Anggara</h3>
+                <p>Putri dari Bpk. Much Rifai <br> dan <br> Ibu Siti Solikhah</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="acara" class="acara">
+    <div class="container justify-content-center">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8">
+                <h1>Informasi Acara</h1>
+                <h2>Assalamualaikum Wr.Wb</h2>
+                <p>Seraya menengadahkan tangan memohon Rahmat serta Ridho Allah SWT. <br>
+                    Kami bermaksut untuk menyelenggarakan Resepsi pernikahan kami yang Insya Allah akan dilaksanakan pada :</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 justify-content-center" style="padding-left: 30px; ">
+            <!-- Akad Nikah -->
+            <div class="col-lg-6 justify-content-center">
+                <div class="event-box justify-content-center">
+                    <h3>💍 Akad Nikah</h3>
+                    <p><strong>📅 Tanggal:</strong> 24 April 2025</p>
+                    <p><strong>🕘 Waktu:</strong> 07:30 WIB</p>
+                    <p><strong>📍 Lokasi:</strong> Dusun Dukuh Rt 15 Rw 03, Desa Duren, Kecamatan Tengaran</p>
+                </div>
+            </div>
+
+            <!-- Resepsi -->
+            <div class="col-lg-6 justify-content-center ">
+                <div class="event-box justify-content-center">
+                    <h3>🎉 Resepsi Pernikahan</h3>
+                    <p><strong>📅 Tanggal:</strong> 24 April 2025</p>
+                    <p><strong>🕘 Waktu:</strong> 09:00 WIB</p>
+                    <p><strong>📍 Lokasi:</strong> Dusun Dukuh Rt 15 Rw 03, Desa Duren, Kecamatan Tengaran</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alamat & Maps -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-8 text-center">
+                <h3>📍 Lokasi Acara</h3>
+                <p>Silakan klik peta di bawah ini untuk mendapatkan arah menuju lokasi.</p>
+                <div class="map-container">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3956.4245430847227!2d110.56527927500112!3d-7.418177492592205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnMDUuNCJTIDExMMKwMzQnMDQuMyJF!5e0!3m2!1sid!2sid!4v1741226620138!5m2!1sid!2sid" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="countdown/kode.js"></script>
+
+<script>
+    const rootElement = document.documentElement;
+    let scrollTop, scrollLeft;
+
+    function disableScroll() {
+        scrollTop = window.pageYOffset; // Menyimpan posisi scroll saat ini
+        scrollLeft = window.pageXOffset;
+        
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop); // Mencegah scroll
+        };
+        
+        rootElement.style.scrollBehavior = "auto"; // Matikan efek smooth sementara
+    }
+
+    function enableScroll() {
+        window.onscroll = null; // Kembalikan fungsi scroll normal
+        rootElement.style.scrollBehavior = "smooth"; // Aktifkan efek smooth
+    }
+
+    disableScroll();
+
+    // Event listener untuk tombol "Lihat Undangan"
+    document.addEventListener("DOMContentLoaded", function() {
+        const btnUndangan = document.querySelector(".btn.btn-lg"); // Perbaiki selector agar cocok dengan kode HTML
+        if (btnUndangan) {
+            btnUndangan.addEventListener("click", function(event) {
+                event.preventDefault(); // Mencegah perilaku bawaan dari anchor
+                enableScroll(); // Aktifkan kembali scroll
+                document.querySelector("#home").scrollIntoView({ behavior: "smooth" }); // Scroll otomatis ke bagian undangan
+            });
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const music = document.getElementById("backgroundMusic");
+        const musicButton = document.getElementById("musicButton");
+        const btnUndangan = document.querySelector(".btn.btn-lg");
+
+        function playMusic() {
+            music.play().then(() => {
+                musicButton.innerHTML = "🔊"; // Ikon suara aktif
+            }).catch(error => console.log("Autoplay tidak didukung, user harus klik tombol."));
+        }
+
+        function toggleMusic() {
+            if (music.paused) {
+                playMusic();
+            } else {
+                music.pause();
+                musicButton.innerHTML = "🔇"; // Ikon suara mati
+            }
+        }
+
+        // Jalankan musik saat tombol "Lihat Undangan" diklik
+        if (btnUndangan) {
+            btnUndangan.addEventListener("click", function () {
+                enableScroll();
+                document.querySelector("#home").scrollIntoView({ behavior: "smooth" });
+                playMusic();
+            });
+        }
+
+        // Event listener untuk tombol musik
+        musicButton.addEventListener("click", toggleMusic);
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Saat halaman dimuat, pastikan kembali ke atas
+        window.scrollTo(0, 0);
+
+        const rootElement = document.documentElement;
+        let scrollTop, scrollLeft;
+
+        function disableScroll() {
+            scrollTop = window.pageYOffset;
+            scrollLeft = window.pageXOffset;
+
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+
+            rootElement.style.scrollBehavior = "auto"; // Matikan efek smooth sementara
+        }
+
+        function enableScroll() {
+            window.onscroll = null; // Kembalikan fungsi scroll normal
+            rootElement.style.scrollBehavior = "smooth"; // Aktifkan efek smooth
+        }
+
+        disableScroll();
+
+        // Event listener untuk tombol "Lihat Undangan"
+        const btnUndangan = document.querySelector(".btn.btn-lg");
+        if (btnUndangan) {
+            btnUndangan.addEventListener("click", function (event) {
+                event.preventDefault();
+                enableScroll();
+                document.querySelector("#home").scrollIntoView({ behavior: "smooth" });
+            });
+        }
+    });
+</script>
+<section id="Tamu" class="Tamu">
+<div class="container mt-5">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-8">
+            <h3>📖 Buku Tamu</h3>
+            <p>Berikan ucapan & doa untuk kami di bawah ini:</p>
+            
+            <!-- Google Form -->
+            <div class="iframe-container">
+                <iframe src="https://forms.gle/qY6bNvdHSyfRPKyT8" 
+                    width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+                Memuat…
+                </iframe>
+            </div>
+
+            <!-- Google Sheet -->
+            <div class="iframe-container mt-4">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTfALjC74LhcJLC8ZtfyicI7OA6XQM-e_cw4qDh2rLcG9Ll3YXPwRKe8z0XHHZ6IertFXGyGmbIFhUS/pubhtml?widget=true&amp;headers=false"
+                width="100%" height="600" frameborder="0" style="border:1px solid #ddd;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const googleForm = document.querySelector("iframe[src*='docs.google.com/forms']");
+        const googleSheet = document.querySelector("iframe[src*='docs.google.com/spreadsheets']");
+        
+        if (googleForm && googleSheet) {
+            googleForm.addEventListener("load", function () {
+                setTimeout(function () {
+                    googleSheet.src = googleSheet.src; // Refresh Google Sheets otomatis
+                }, 3000); // Delay 3 detik untuk memastikan data sudah masuk
+            });
+        }
+    });
+</script>
+
+<script>// Ambil parameter dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const namaUndangan = urlParams.get('nama') || " ";
+const pronoun = urlParams.get('p') || "Bapak/Ibu/Saudara/i, ";
+
+// Tampilkan di console
+console.log(`Nama Undangan: ${pronoun} ${namaUndangan}`);
+
+// Tampilkan di halaman jika ada elemen dengan kelas 'hero h4 span'
+const namaContainer = document.querySelector('.hero h4 span');
+if (namaContainer) {
+    namaContainer.innerText = `${pronoun} ${namaUndangan}`;
+}
+
+
+</script>
+
+
+<script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+</html>
