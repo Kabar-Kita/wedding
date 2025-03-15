@@ -93,13 +93,13 @@ body {
     text-align: center;
 }
 .home h2 {
-   
-    color: white;
+    font-family: 'Montserrat';
     font-size: 2rem;
+    color: #f14e95;
+    font-weight: 300;
     font-weight: bold;
-    text-shadow: var(--shadow);
-    font-family: 'alice';
 }
+
 .home h3 {
     color: white;
     font-size: 1.5rem;
@@ -141,13 +141,6 @@ body {
     color: white;
 }
 
-.acara h2 {
-    font-family: 'Montserrat';
-    font-size: 2rem;
-    color: #f14e95;
-    font-weight: 300;
-    font-weight: bold;
-}
 .event-box {
     background: linear-gradient(135deg, rgba(241, 78, 149, 0.9), rgba(0, 0, 0, 0.9));
     padding: 25px;
